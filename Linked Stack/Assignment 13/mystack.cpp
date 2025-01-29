@@ -82,11 +82,7 @@ mystack::mystack(const mystack& x)
 
 bool mystack::empty() const
 {
-    if (stk_size == 0)
-    {
-        return true;
-    }
-    return false;
+    return stk_size == 0;
 }
 
 /* clear
@@ -163,6 +159,8 @@ ostream& operator<<(ostream& os, const mystack& obj)
 void mystack::push(int value)
 {
     node* new_node = new node(value, topstack); // allocating new node with node constructor
+    new_node -> value = value;
+    new_node -> next = topstack;
     topstack = new_node; // new node is set to top of stack
     stk_size++; // increment stack size
 }

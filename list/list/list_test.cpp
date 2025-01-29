@@ -82,7 +82,7 @@ int main()
     
     cout << "l1 front: " << l1.front() << endl;
     cout << "l1 back: " << l1.back() << endl << endl;
- /*
+ 
     cout << "*** Testing pop_back() ***\n\n";
     
     l2.pop_back();
@@ -152,7 +152,7 @@ int main()
     cout << "l1 (size " << l1.size() << "): " << l1 << endl;
     cout << "l3 (size " << l3.size() << "): " << l3 << endl;
     cout << "l4 (size " << l4.size() << "): " << l4 << endl << endl;
-    
+  
     cout << "*** Testing equality operator ***\n\n";
     
     cout << "l1 and l4 are " << ((l1 == l4) ? "equal\n" : "not equal\n");
@@ -164,7 +164,7 @@ int main()
     l4.pop_front();
     
     cout << "l1 and l4 are " << ((l1 == l4) ? "equal\n\n" : "not equal\n\n");
-    
+
     cout << "*** Testing less than operator ***\n\n";
     
     cout << "l1 is " << ((l1 < l4) ? "less than" : "not less than") << " l4\n";
@@ -254,6 +254,6 @@ int main()
     {
         cout << "Caught "<< e.what() << endl;
     }
-*/
+
     return 0;
 }
